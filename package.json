@@ -1,0 +1,50 @@
+{
+  "name": "@3dtexel/mcp",
+  "version": "1.0.0",
+  "description": "MCP server for 3D Texel: search and download 7,000+ PBR materials, HDRIs, decals and 3D assets (free CC0 + AI), and generate seamless PBR materials, HDRI skyboxes and textures from Claude, Cursor, ChatGPT and other AI agents.",
+  "mcpName": "com.3dtexel/mcp",
+  "type": "module",
+  "bin": {
+    "3dtexel-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node scripts/build.mjs && node test/bridge.test.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "@types/node": "^20.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "pbr",
+    "textures",
+    "hdri",
+    "skybox",
+    "3d-assets",
+    "cc0",
+    "game-dev",
+    "unreal-engine",
+    "blender",
+    "ai-texture-generator"
+  ],
+  "homepage": "https://3dtexel.com/developers/",
+  "license": "MIT",
+  "author": "3D Texel (https://3dtexel.com)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gatyh/3dtexel-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Gatyh/3dtexel-mcp/issues"
+  }
+}

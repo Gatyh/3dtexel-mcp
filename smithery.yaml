@@ -1,0 +1,12 @@
+# Smithery (https://smithery.ai) — local stdio launch. The remote endpoint can also be added directly as a URL.
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      apiKey:
+        type: string
+        description: "Optional 3D Texel API key (https://3dtexel.com/api-keys/). Without it: search, asset details and prices only."
+  commandFunction: |-
+    (config) => ({ command: 'npx', args: ['-y', '@3dtexel/mcp'], env: config.apiKey ? { TEXEL_API_KEY: config.apiKey } : {} })
+  exampleConfig: {}
