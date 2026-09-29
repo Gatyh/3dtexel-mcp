@@ -1,8 +1,8 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.3dtexel/mcp",
   "title": "3D Texel",
-  "description": "Search/download 7,000+ PBR materials, HDRIs, decals, 3D assets (CC0 + AI) and generate PBR materials, HDRIs and textures.",
+  "description": "Search/download 7,000+ PBR materials, HDRIs, decals, 3D assets; generate PBR materials and HDRIs.",
   "version": "1.0.0",
   "websiteUrl": "https://3dtexel.com/developers/",
   "remotes": [
@@ -13,24 +13,6 @@
         {
           "name": "Authorization",
           "description": "Optional. \"Bearer <API key>\" from https://3dtexel.com/api-keys/ to download and generate. Search works without it.",
-          "isRequired": false,
-          "isSecret": true
-        }
-      ]
-    }
-  ],
-  "packages": [
-    {
-      "registryType": "npm",
-      "identifier": "@3dtexel/mcp",
-      "version": "1.0.0",
-      "transport": {
-        "type": "stdio"
-      },
-      "environmentVariables": [
-        {
-          "name": "TEXEL_API_KEY",
-          "description": "Optional API key (or run `npx -y @3dtexel/mcp login`).",
           "isRequired": false,
           "isSecret": true
         }
