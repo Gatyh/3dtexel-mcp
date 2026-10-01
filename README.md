@@ -1,5 +1,7 @@
 # 3D Texel MCP server
 
+[![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/gatyh/3dtexel-mcp)
+
 Give Claude, Cursor, ChatGPT, Windsurf, Cline or any MCP client access to [3D Texel](https://3dtexel.com):
 
 - **Search and download 7,000+ assets**: 1,600+ free CC0 handmade PBR materials, HDRIs, decals, 3D models, IES profiles, atlases and landscapes, plus 5,600+ AI assets (materials, HDRI skyboxes, decals, heightmaps, 4,000+ UE5/Mixamo animations, 3D models, alpha brushes).
