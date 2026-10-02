@@ -14,16 +14,20 @@ Give Claude, Cursor, ChatGPT, Windsurf, Cline or any MCP client access to [3D Te
 
 ## Local (stdio) bridge
 
+Run it straight from this GitHub repository (the built `dist/` is committed, nothing to compile):
+
 ```json
-{ "mcpServers": { "3dtexel": { "command": "npx", "args": ["-y", "@3dtexel/mcp"] } } }
+{ "mcpServers": { "3dtexel": { "command": "npx", "args": ["-y", "github:Gatyh/3dtexel-mcp"] } } }
 ```
+
+> The npm package `@3dtexel/mcp` is coming soon. Until it is published, use `github:Gatyh/3dtexel-mcp` as shown here; once it is on npm, `npx -y @3dtexel/mcp` will work the same way.
 
 Connect your account once, without copying keys:
 
 ```
-npx -y @3dtexel/mcp login     # shows a code, you approve on 3dtexel.com
-npx -y @3dtexel/mcp status
-npx -y @3dtexel/mcp logout    # revokes the key
+npx -y github:Gatyh/3dtexel-mcp login     # shows a code, you approve on 3dtexel.com
+npx -y github:Gatyh/3dtexel-mcp status
+npx -y github:Gatyh/3dtexel-mcp logout    # revokes the key
 ```
 
 Or set `TEXEL_API_KEY` in the `env` block. The key is stored in your user config folder (`%APPDATA%\3dtexel` or `~/.config/3dtexel`), never printed.
